@@ -1,0 +1,251 @@
+header {
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5vh auto;
+    .button {
+        @include Button1ldle(44px, 176px);
+        &:hover {
+            @include Button1Hover(44px, 176px);
+        }
+        }
+    }
+
+main {
+    
+    .title {
+        @include HeadingL;
+        font-size:36px;
+    }
+    p{
+        @include BodyM;
+        font-size: 16px;
+    }
+    .grid_image{ 
+        margin:5vh auto;
+       
+      
+            .grid{
+                    display:grid;
+                    grid-template-columns: repeat(2, 171.5pxpx) ;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                    height:1164px;
+                    grid-gap:15px;
+                    @include BodyM;
+                    color:white;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom:10vh;
+                    .a {
+                        grid-column: 1/3;
+                        grid-row: 1/3;
+                        background-color: $blue_purple;
+                        @include grid-design;      
+                        }             
+                    .b{
+                        grid-column: 1/2;
+                        grid-row: 3/4;
+                        background-color: $pale_orange;
+                        @include grid-design;
+                    }
+                    .c{
+                        grid-column: 2/3;
+                        grid-row: 3/4;
+                        background-color: $light_salmon_pink;
+                        @include grid-design; 
+                    }
+                    .d{
+                            grid-column: 1/3;
+                            grid-row: 5/6;
+                            background-color: $blue_hosta;
+                        @include grid-design;  
+                    }
+                    .e {
+                            grid-column: 1/3;
+                            grid-row: 4/5;
+                            background-color: $dark_peach;
+                        @include grid-design;   
+                    }
+                    .f {
+                            grid-column: 1/3;
+                            grid-row: 6/7;
+                            background-color: $grape_purple;
+                        @include grid-design; 
+                    }
+                        @media #{$minTablet} {
+                            grid-template-columns: repeat(4, 185px) ;
+                            grid-template-rows: 1fr 1fr 1fr;
+                            height:570px;
+                            .b {
+                                grid-column: 3/4;
+                                grid-row: 1/2;
+                             }
+                             .c { 
+                                grid-column: 4/5;
+                                grid-row: 1/2;
+                             }
+                             .d {
+                                grid-column: 1/3;
+                                grid-row: 3/4;
+                             }
+                             .e {
+                                grid-column: 3/5;
+                                grid-row: 2/3;  
+                             }
+                             .f {
+                                grid-column: 3/5;
+                                grid-row: 3/4;
+                             }
+
+                            }
+                        @media #{$minDesktop} {
+                            grid-template-columns: repeat(5, 185px);
+                            grid-template-rows: 1fr 1fr;
+                            height:364px; 
+                            .b {
+                                grid-column: 3/4;
+                                grid-row: 1/2;
+                             }
+                            .c { 
+                                grid-column: 4/5;
+                                grid-row: 1/2;
+                            }
+                            .d {
+                                grid-column: 5/7;
+                                grid-row: 1/2;
+                            }
+                            .e {
+                                grid-column: 3/5;
+                                grid-row: 2/3;
+                            }
+                            .f {
+                                grid-column: 5/7;
+                                grid-row: 2/3;
+                            }
+                        }     
+             }
+
+
+            .hero {
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                    width: 445px;
+                    height:445px;
+                }
+                .text_image {
+                    width:50%;
+                    text-align: left;
+                    .title {
+                        @include HeadingM;
+                        text-align: left;
+                    }
+                    .text{
+                        @include BodyM;
+                        text-align: left;
+                    }
+                    .button{
+                        @include Button2ldle(56px, 228px);
+                        text-align: left;
+                        &:hover {
+                            @include Button2Hover(56px, 228px);
+                        }
+                    }
+                }
+            }
+            
+            
+    }
+    .caroussel {
+        overflow: hidden;
+        .title {
+            width:100vw;
+            @include HeadingS;
+            margin-bottom:30px;
+        }
+        .caroussel_image{
+            display:flex;
+            width: 100vw;
+            
+            
+            .slide {
+                img{
+                    width: 33vw;
+                    height: 360px;
+                    margin-right:5px;
+                    border-radius: 5px;
+                    
+                }
+                
+            }
+        }
+        .caroussel_arrow{
+            width: 100vw;
+            display:flex;
+            justify-content: center;
+            .button_circle_left, .button_circle_right{
+                @include circle;
+                margin-left: 20px;
+                margin-top:20px;
+                &:hover {
+                    @include circleHover;
+                }
+           
+            }
+        }
+    }
+    .call{
+        margin:5vh auto;
+        height:364px;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+        border-radius: 5px;
+        
+        .call_left{
+            margin-left:5vw;
+            .title{
+                @include HeadingM;
+                color:white;
+                width: 50%;
+                text-align: left;
+            }
+
+            p{
+                @include BodyM;
+                color:white;
+                width: 50%;
+                text-align: left;
+                
+            }
+        }
+        .call_right{
+            margin-right:5vw;
+            .button {
+                @include Button2ldle(56px, 228px);
+                &:hover {
+                    @include Button2Hover(56px, 228px);
+                }
+                
+            }
+        }
+    }
+}     
+
+
+footer {
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5vh auto;
+    .button {
+        @include Button1ldle(56px, 228px);
+        &:hover {
+            @include Button1Hover(56px, 228px);
+        }
+    }
+}

@@ -1,0 +1,801 @@
+body {
+  background-color: #FFF7F0;
+  margin: 4vw 4vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+header .button {
+  height: 44px;
+  width: 176px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  cursor: pointer;
+  background-color: #030303;
+  font-weight: bold;
+}
+header .button:hover {
+  height: 44px;
+  width: 176px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  cursor: pointer;
+}
+header .button:hover:hover {
+  background-color: #755CDE;
+}
+@media (min-width:481px) {
+  header .button {
+    height: 56px;
+    width: 228px;
+    font-family: "Plus Jakarta Sans";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+    background-color: #030303;
+  }
+  header .button:hover {
+    height: 56px;
+    width: 228px;
+    font-family: "Plus Jakarta Sans";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+  }
+  header .button:hover:hover {
+    background-color: #755CDE;
+  }
+}
+header img {
+  height: 48px;
+  width: 48px;
+}
+@media (min-width:481px) {
+  header img {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+main .title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 56px;
+  line-height: 70px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+@media (min-width:481px) {
+  main .title {
+    font-size: 44px;
+    line-height: 42px;
+  }
+}
+@media (min-width:992px) {
+  main .title {
+    font-size: 56px;
+    line-height: 42px;
+  }
+}
+main p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: medium;
+  font-size: 16px;
+}
+main .grid_image .grid {
+  display: grid;
+  grid-template-columns: repeat(2, fr);
+  grid-template-rows: repeat(6, fr);
+  height: 1164px;
+  grid-gap: 15px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: medium;
+  color: white;
+  font-weight: bold;
+}
+@media (min-width:481px) {
+  main .grid_image .grid {
+    grid-template-columns: repeat(4, fr);
+    grid-template-rows: repeat(3, fr);
+    height: 690px;
+  }
+}
+@media (min-width:992px) {
+  main .grid_image .grid {
+    margin: 80px 20px;
+    grid-template-columns: repeat(5, fr);
+    grid-template-rows: repeat(2, fr);
+    height: 364px;
+  }
+}
+main .grid_image .grid .a {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  background-color: #755CDE;
+  border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .grid_image .grid .a span {
+  align-self: flex-end;
+  margin: 10px;
+}
+main .grid_image .grid .a .grid_img {
+  align-self: flex-start;
+  margin: 10px;
+}
+main .grid_image .grid .b {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: #F6A560;
+  border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .grid_image .grid .b span {
+  align-self: flex-end;
+  margin: 10px;
+}
+main .grid_image .grid .b .grid_img {
+  align-self: flex-start;
+  margin: 10px;
+}
+@media (min-width:481px) {
+  main .grid_image .grid .b {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+@media (min-width:992px) {
+  main .grid_image .grid .b {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+main .grid_image .grid .c {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: #F39E9E;
+  border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .grid_image .grid .c span {
+  align-self: flex-end;
+  margin: 10px;
+}
+main .grid_image .grid .c .grid_img {
+  align-self: flex-start;
+  margin: 10px;
+}
+@media (min-width:481px) {
+  main .grid_image .grid .c {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+}
+@media (min-width:992px) {
+  main .grid_image .grid .c {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+}
+main .grid_image .grid .d {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  background-color: #61C4B7;
+  border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .grid_image .grid .d span {
+  align-self: flex-end;
+  margin: 10px;
+}
+main .grid_image .grid .d .grid_img {
+  align-self: flex-start;
+  margin: 10px;
+}
+@media (min-width:481px) {
+  main .grid_image .grid .d {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}
+@media (min-width:992px) {
+  main .grid_image .grid .d {
+    grid-column: 5/7;
+    grid-row: 1/2;
+  }
+}
+main .grid_image .grid .e {
+  grid-column: 1/3;
+  grid-row: 4/5;
+  background-color: #EB7565;
+  border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .grid_image .grid .e span {
+  align-self: flex-end;
+  margin: 10px;
+}
+main .grid_image .grid .e .grid_img {
+  align-self: flex-start;
+  margin: 10px;
+}
+@media (min-width:481px) {
+  main .grid_image .grid .e {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+}
+@media (min-width:992px) {
+  main .grid_image .grid .e {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+}
+main .grid_image .grid .f {
+  grid-column: 1/3;
+  grid-row: 6/7;
+  background-color: #552049;
+  border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .grid_image .grid .f span {
+  align-self: flex-end;
+  margin: 10px;
+}
+main .grid_image .grid .f .grid_img {
+  align-self: flex-start;
+  margin: 10px;
+}
+@media (min-width:481px) {
+  main .grid_image .grid .f {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+}
+@media (min-width:992px) {
+  main .grid_image .grid .f {
+    grid-column: 5/7;
+    grid-row: 2/3;
+  }
+}
+main .hero {
+  margin: 100px 20px;
+  text-align: center;
+}
+@media (min-width:481px) {
+  main .hero {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+main .hero img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2vh;
+}
+@media (min-width:481px) {
+  main .hero img {
+    width: 364px;
+    height: 364px;
+    margin-left: -70px;
+  }
+}
+@media (min-width:992px) {
+  main .hero img {
+    width: 445px;
+    height: 445px;
+    margin-left: 0px;
+  }
+}
+@media (min-width:481px) {
+  main .hero .text_image {
+    margin-left: 70px;
+    text-align: left;
+  }
+}
+main .hero .text_image .title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 2vh;
+}
+@media (min-width:481px) {
+  main .hero .text_image .title {
+    text-align: left;
+  }
+}
+@media (min-width:992px) {
+  main .hero .text_image .title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    line-height: 51px;
+    text-align: center;
+    font-size: 40px;
+    text-align: left;
+  }
+}
+main .hero .text_image .text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: medium;
+  font-size: 16px;
+  margin-bottom: 2vh;
+}
+@media (min-width:481px) {
+  main .hero .text_image .text {
+    text-align: left;
+  }
+}
+@media (min-width:992px) {
+  main .hero .text_image .text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    line-height: 51px;
+    text-align: center;
+    font-size: 18px;
+    text-align: left;
+  }
+}
+main .hero .text_image .button1 {
+  height: 44px;
+  width: 176px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  cursor: pointer;
+  background-color: #EB7565;
+  margin: 0px auto;
+  font-weight: bold;
+}
+main .hero .text_image .button1:hover {
+  height: 44px;
+  width: 176px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  cursor: pointer;
+  background-color: #F6A560;
+}
+@media (min-width:481px) {
+  main .hero .text_image .button1 {
+    height: 56px;
+    width: 228px;
+    font-family: "Plus Jakarta Sans";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+    background-color: #EB7565;
+    font-weight: bold;
+    margin-left: 0px;
+  }
+  main .hero .text_image .button1:hover {
+    height: 56px;
+    width: 228px;
+    font-family: "Plus Jakarta Sans";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+    background-color: #F6A560;
+  }
+}
+main .caroussel {
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+@media (min-width:992px) {
+  main .caroussel {
+    margin-top: 10vh;
+  }
+}
+main .caroussel .title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+@media (min-width:992px) {
+  main .caroussel .title {
+    font-size: 32px;
+  }
+}
+main .caroussel .caroussel_image {
+  display: flex;
+  width: 376vw;
+}
+@media (min-width:481px) {
+  main .caroussel .caroussel_image {
+    width: 376vw;
+  }
+}
+@media (min-width:992px) {
+  main .caroussel .caroussel_image {
+    width: 500vw;
+  }
+}
+main .caroussel .caroussel_image .slide img {
+  width: 72vw;
+  height: 180px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+@media (min-width:481px) {
+  main .caroussel .caroussel_image .slide img {
+    width: 70vw;
+    height: 360px;
+    margin-right: 30px;
+  }
+}
+@media (min-width:992px) {
+  main .caroussel .caroussel_image .slide img {
+    width: 33vw;
+    height: 360px;
+    margin-right: 30px;
+  }
+}
+main .caroussel .caroussel_arrow {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+main .caroussel .caroussel_arrow .button_circle_left, main .caroussel .caroussel_arrow .button_circle_right {
+  height: 64px;
+  width: 64px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #030303;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+main .caroussel .caroussel_arrow .button_circle_left:hover, main .caroussel .caroussel_arrow .button_circle_right:hover {
+  height: 64px;
+  width: 64px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #030303;
+  cursor: pointer;
+}
+main .caroussel .caroussel_arrow .button_circle_left:hover:hover, main .caroussel .caroussel_arrow .button_circle_right:hover:hover {
+  background-color: #755CDE;
+}
+main .call {
+  height: 357px;
+  background-color: black;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width:481px) {
+  main .call {
+    height: 352px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width:992px) {
+  main .call {
+    height: 320px;
+  }
+}
+@media (min-width:481px) {
+  main .call .call_left {
+    margin: 30px;
+  }
+}
+main .call .call_left .title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin: 25px;
+}
+@media (min-width:481px) {
+  main .call .call_left .title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    line-height: 51px;
+    text-align: center;
+    text-align: left;
+    margin: 0px;
+  }
+}
+main .call .call_left p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: medium;
+  color: white;
+  margin: 0px 25px;
+}
+@media (min-width:481px) {
+  main .call .call_left p {
+    text-align: left;
+    margin: 0px;
+  }
+}
+@media (min-width:481px) {
+  main .call .call_right {
+    margin: 30px;
+  }
+}
+main .call .call_right .button {
+  height: 44px;
+  width: 176px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  cursor: pointer;
+  background-color: #EB7565;
+  margin: 25px auto;
+  font-weight: bold;
+}
+main .call .call_right .button:hover {
+  height: 44px;
+  width: 176px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  cursor: pointer;
+  background-color: #F6A560;
+}
+@media (min-width:481px) {
+  main .call .call_right .button {
+    margin: 0px auto;
+    height: 56px;
+    width: 228px;
+    font-family: "Plus Jakarta Sans";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+    background-color: #EB7565;
+  }
+  main .call .call_right .button:hover {
+    height: 56px;
+    width: 228px;
+    font-family: "Plus Jakarta Sans";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+    background-color: #F6A560;
+  }
+}
+@media (min-width:992px) {
+  main .call .call_right .button {
+    margin: 0px auto;
+    height: 56px;
+    width: 228px;
+    font-family: "Plus Jakarta Sans";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+    background-color: #EB7565;
+  }
+  main .call .call_right .button:hover {
+    height: 56px;
+    width: 228px;
+    font-family: "Plus Jakarta Sans";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+    background-color: #F6A560;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+  font-weight: bold;
+}
+footer .button {
+  height: 44px;
+  width: 176px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  cursor: pointer;
+  background-color: #030303;
+  font-weight: bold;
+}
+footer .button:hover {
+  height: 44px;
+  width: 176px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  cursor: pointer;
+}
+footer .button:hover:hover {
+  background-color: #755CDE;
+}
+@media (min-width:481px) {
+  footer .button {
+    height: 56px;
+    width: 228px;
+    font-family: "Plus Jakarta Sans";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+    background-color: #030303;
+  }
+  footer .button:hover {
+    height: 56px;
+    width: 228px;
+    font-family: "Plus Jakarta Sans";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+  }
+  footer .button:hover:hover {
+    background-color: #755CDE;
+  }
+}
+footer img {
+  height: 48px;
+  width: 48px;
+}
+@media (min-width:481px) {
+  footer img {
+    height: 64px;
+    width: 64px;
+  }
+}/*# sourceMappingURL=styles.css.map */

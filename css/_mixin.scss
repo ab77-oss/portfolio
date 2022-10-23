@@ -1,0 +1,118 @@
+@mixin HeadingL  {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size:56px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@mixin HeadingM {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size:40px;
+    line-height: 51px;
+    text-align: center;
+    
+    
+}
+
+@mixin HeadingS {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size:32px;
+    line-height: 40px;
+    text-align: center;
+}
+
+@mixin BodyM {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size:16px;
+    line-height: 28px;
+    text-align: center;
+    font-weight:medium;
+}
+
+
+@mixin button($height, $width) {
+    height:$height;
+    width:$width;
+    font-family: 'Plus Jakarta Sans';
+    color:white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor:pointer;
+}
+
+@mixin circle {
+    height:64px;
+    width:64px;
+    color:white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border-radius:50%;
+    background-color: $black;
+    cursor:pointer;
+}
+
+
+@mixin Button1ldle($height, $width) {
+    @include button($height, $width);
+    background-color:$black ;
+}
+
+@mixin Button1Hover($height, $width) {
+    @include button($height, $width);
+    &:hover {
+        background-color: $blue_purple;
+    }
+    
+}
+
+@mixin Button2ldle($height, $width) {
+    @include button($height, $width);
+    background-color: $dark_peach
+}
+
+@mixin Button2Hover($height, $width){
+    @include button($height, $width);
+    background-color: $pale_orange
+        
+}
+
+@mixin circleHover{
+    @include circle;
+    &:hover {
+        background-color: $blue_purple;
+    }
+}
+
+
+@mixin grid-design {
+    border-radius: 5px;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    span {
+        align-self:flex-end;
+        margin:10px;
+    }
+    .grid_img{
+        align-self:flex-start;
+        margin:10px;
+ 
+
+    }
+}
+
+
+
+
+
+
+
